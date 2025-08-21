@@ -1,0 +1,64 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    background-color: #43281C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    color: #FBF2C0;
+    box-shadow: 0px 0px 10px 0px #ffffff77;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+}
+
+.login,
+.senha {
+    border: 1px solid #ffffff77;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btnVerificar {
+    width: 70%;
+    padding: 10px;
+    background-color: #FBF2C0;
+    border-radius: 20px;
+    border: none;
+    color: #48392A;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnVerificar:hover {
+    background-color: #48392A;
+    color: #FBF2C0;
+    box-shadow: 0px 0px 10px 0px #ffffff77;
+}
+
+.liberado {
+    font-weight: bold;
+    color: green;
+}
+
+.negado {
+    font-weight: bold;
+    color: red;
+}

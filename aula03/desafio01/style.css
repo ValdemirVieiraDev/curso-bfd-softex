@@ -1,0 +1,92 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    color: #BB9457;
+    box-shadow: 0px 0px 10px 0px #350d0d;
+}
+
+header {
+    background-color: #350d0dea;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px 5px 0 0;
+}
+
+main {
+    margin: 0 auto;
+    background-color: #350d0d;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.nota1,
+.nota2,
+.nota3 {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    font-size: 14px;
+    background-color: #350d0d;
+    padding: 0 5px;
+}
+
+#nota1,
+#nota2,
+#nota3 {
+    background-color: rgb(34, 1, 1);
+    color: #FFF;
+    border: 1px solid #BB9457;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+#btnCalcular {
+    padding: 10px;
+    background-color: #99582A;
+    border-radius: 5px;
+    border: none;
+    color: #BB9457;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnCalcular:hover {
+    background-color: #BB9457;
+    color: #99582A;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.aprovado {
+    font-weight: bold;
+    color: green;
+}
+
+.recuperacao {
+    font-weight: bold;
+    color: orange;
+}
+
+.reprovado {
+    font-weight: bold;
+    color: red;
+}
