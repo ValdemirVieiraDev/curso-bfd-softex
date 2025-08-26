@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const valor = Number(input.value);
         lista.innerHTML = '';
 
-        for(let i; i <= 10; i++) {
+        for(let i = 1; i <= 10; i++) {
             const li = document.createElement('li');
             li.textContent = `${valor} x ${i} = ${valor * i}`;
             lista.appendChild(li);
