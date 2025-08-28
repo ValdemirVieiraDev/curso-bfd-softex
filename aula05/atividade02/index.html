@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e Médias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="titulo container">
+        <h1>Situação dos Alunos</h1>
+    </header>
+
+    <main class="container">
+        <form id="formAlunos">
+            <table>
+                <caption>Cadastrar Alunos</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Prova 1</th>
+                        <th>Prova 2</th>
+                        <th>Prova 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="nome" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nome" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nome" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nome" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                        <td><input type="number" name="nota" min="0" max="10" step="0.1" required></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="btnSubmit" type="submit">Gerar Situação</button>
+        </form>
+
+        <table id="tabelaNotas">
+            <caption>Situação Final</caption>
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Prova 1</th>
+                    <th>Prova 2</th>
+                    <th>Prova 3</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+</body>
+</html>

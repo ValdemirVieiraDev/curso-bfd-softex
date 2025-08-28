@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(media >= 7) {
             situacaoAl.textContent = "Aluno aprovado!";
-            situacaoAl.className = "aprovado"
+            situacaoAl.className = "aprovado";
         } else if(media >= 5) {
             situacaoAl.textContent = "Aluno em recuperação";
-            situacaoAl.className = "recuperacao"
+            situacaoAl.className = "recuperacao";
         } else {
             situacaoAl.textContent = "Aluno reprovado";
-            situacaoAl.className = "reprovado"
+            situacaoAl.className = "reprovado";
         }
     });
 });
