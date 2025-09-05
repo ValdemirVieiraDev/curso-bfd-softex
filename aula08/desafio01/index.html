@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e Médias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="titulo container">
+        <h1>Situação dos Alunos</h1>
+    </header>
+
+    <main class="container">
+        <form id="formAlunos">
+            <label>
+                Nome: <input type="text" name="nome" required>
+            </label>
+            <label>
+                Nota 1: <input type="number" name="nota" step="0.1" min="0" max="10" required>
+            </label>
+            <label>
+                Nota 2: <input type="number" name="nota" step="0.1" min="0" max="10" required>
+            </label>
+            <label>
+                Nota 3: <input type="number" name="nota" step="0.1" min="0" max="10" required>
+            </label>
+
+            <button class="btnSubmit" type="submit">Adicionar Aluno</button>
+        </form>
+
+        <table id="tabelaNotas">
+            <caption>Situação Final</caption>
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Prova 1</th>
+                    <th>Prova 2</th>
+                    <th>Prova 3</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+</body>
+</html>
