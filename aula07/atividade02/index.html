@@ -12,27 +12,28 @@
         <h1>Maior e Menor</h1>
     </header>
 
-    <main class="container">
+    <main class="container card">
         <form id="formNumeros">
             <div class="grid">
-                <input name="numero" type="number" placeholder="1º número">
-            </div>
-            <div>
-                <input name="numero" type="number" placeholder="2º número">
-            </div>
-            <div>
-                <input name="numero" type="number" placeholder="3º número">
-            </div>
-            <div>
-                <input name="numero" type="number" placeholder="4º número">
-            </div>
-            <div>
-                <input name="numero" type="number" placeholder="5º número">
+                <div>
+                    <input name="numero" type="number" placeholder="1º número" required>
+                </div>
+                <div>
+                    <input name="numero" type="number" placeholder="2º número" required>
+                </div>
+                <div>
+                    <input name="numero" type="number" placeholder="3º número" required>
+                </div>
+                <div>
+                    <input name="numero" type="number" placeholder="4º número" required>
+                </div>
+                <div>
+                    <input name="numero" type="number" placeholder="5º número" required>
+                </div>
             </div>
 
             <div>
                 <button type="submit">Enviar</button>
-                <button id="btnLimpar">Limpar</button>
             </div>
         </form>
 
@@ -43,7 +44,7 @@
                 <th>Resultado</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody class="resultado"></tbody>
         </table>
     </main>
 </body>
