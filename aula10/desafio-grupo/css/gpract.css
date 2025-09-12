@@ -1,0 +1,40 @@
+.tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--gap);
+}
+
+.tip {
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff, #fbfdff);
+    border: 1px solid rgba(16, 24, 40, 0.03);
+}
+
+.tip h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.tip p {
+    margin: 0;
+    color: var(--muted);
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.55rem;
+    border-radius: 6px;
+    background: rgba(6, 182, 212, 0.08);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+
+.checklist {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(16, 24, 40, 0.03);
+}

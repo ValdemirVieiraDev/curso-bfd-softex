@@ -1,0 +1,37 @@
+.crypto-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: var(--gap);
+}
+
+@media (max-width: 900px) {
+    .crypto-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.crypto-card {
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--card-bg);
+    box-shadow: 0 6px 12px rgba(16, 24, 40, 0.04);
+}
+
+.crypto-terms {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+    background: #f8fafc;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+
+.code-sample {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #fff;
+    font-family: ui-monospace, monospace;
+    font-size: 0.9rem;
+}
