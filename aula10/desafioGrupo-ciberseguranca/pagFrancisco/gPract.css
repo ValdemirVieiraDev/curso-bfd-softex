@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fonteTitulo: 'Orbitron', sans-serif;
+    --fonteTexto: 'Open Sans', sans-serif;
+    --preto200: #020202;
+    --preto100: #111;
+    --verde400: #0D2818;
+    --verde300: #04471C;
+    --verde200: #058C42;
+    --verde100: #16DB65;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto200);
+    font-family: var(--fonteTexto);
+    background-image: url('https://i.pinimg.com/originals/84/53/be/8453bedc2350e1878e07bbb05cd13765.gif');
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--verde100);
+}
+
+.titulo {
+    display: flex;
+    color: var(--verde100);
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+header {
+    position: relative;
+    height: 180px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/originals/ae/0d/ad/ae0dad3e3926dbd1e435b46b7e9e6d04.gif') center/cover no-repeat;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+header h1 {
+    font-family: var(--fonteTitulo);
+    font-size: 35pt;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo p {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: row;   
+        flex-wrap: wrap;      
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        flex: 0 1 auto;        
+    }
+}
+
+
+nav {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+nav > a {
+    color: var(--verde100);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--verde100);
+    color: var(--preto200);
+    transition: background .3s, color .3s;
+    border-radius: 9px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--verde200);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.content {
+    flex: 3;
+    background: var(--preto100);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--verde200);
+}
+
+.content h2 {
+    font-family: var(--fonteTitulo);
+    font-size: 26pt;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--verde200);
+    padding-bottom: 5px;
+}
+
+.content h3 {
+    font-family: var(--fonteTitulo);
+    font-size: 20pt;
+    margin: 25px 0 10px 0;
+    border-left: 4px solid var(--verde100);
+    padding-left: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.referencias {
+    margin-top: 40px;
+    background: var(--preto200);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--verde300);
+}
+
+.referencias h2 {
+    font-family: var(--fonteTitulo);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--verde100);
+    padding-bottom: 5px;
+}
+
+.referencias ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.referencias li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: var(--verde100);
+    font-size: 12pt;
+    text-align: center;
+    padding: 10px;
+    color: var(--preto200);
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar img {
+        max-width: 45%;
+    }
+}

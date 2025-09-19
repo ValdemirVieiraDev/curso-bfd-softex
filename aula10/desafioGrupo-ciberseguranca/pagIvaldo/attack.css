@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fonteTitulo: 'Orbitron', sans-serif;
+    --fonteTexto: 'Open Sans', sans-serif;
+    --preto200: #020202;
+    --preto100: #111;
+    --verde400: #0D2818;
+    --verde300: #04471C;
+    --verde200: #058C42;
+    --verde100: #16DB65;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto200);
+    font-family: var(--fonteTexto);
+    background-image: url('https://i.pinimg.com/originals/84/53/be/8453bedc2350e1878e07bbb05cd13765.gif');
+    background-position: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    color: var(--verde100);
+}
+
+header {
+    position: relative;
+    height: 180px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/originals/ae/0d/ad/ae0dad3e3926dbd1e435b46b7e9e6d04.gif') center/cover no-repeat;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+header h1 {
+    font-family: var(--fonteTitulo);
+    font-size: 36pt;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo p {
+    font-size: 13pt;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+nav > a {
+    color: var(--verde100);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--verde100);
+    color: var(--preto200);
+    transition: background .3s, color .3s;
+    border-radius: 9px;
+}
+
+#timeline-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    background: var(--preto100);
+    border-radius: 10px;
+    justify-content: space-around;
+    position: sticky;
+    top: 5px;
+    z-index: 0;
+}
+
+#timeline-nav a {
+    padding: 10px;
+    background: transparent;
+    color: var(--verde100);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    flex: 0 1 auto;
+}
+
+#timeline-nav a:hover {
+    background: var(--verde100);
+    color: var(--preto200);
+}
+
+main {
+    background-color: var(--preto200);
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    color: var(--verde100);
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+section > h2 {
+    font-family: var(--fonteTitulo);
+    font-size: 26pt;
+    padding: 10px;
+    margin: 10px;
+}
+
+section > p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px;
+}
+
+section img,
+.mainImg {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.curiosidades {
+    background: var(--preto100);
+    color: var(--verde100);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.curiosidades h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: var(--verde100);
+    border-bottom: 2px solid var(--verde100);
+    padding-bottom: 5px;
+}
+
+.curiosidades ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.curiosidades li {
+    margin-bottom: 10px;
+}
+
+#linha-do-tempo h3 {
+    margin-top: 3em;
+    color: var(--verde100);
+    font-size: 2rem;
+    font-family: var(--fonteTitulo);
+    border-bottom: 2.5px solid var(--verde200);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#linha-do-tempo ul {
+    background-color: var(--preto100);
+    padding: 1em;
+    border-left: 4px solid var(--verde100);
+    list-style-type: none;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#linha-do-tempo li {
+    font-size: 20px;
+}
+
+#mapa-ciberataques {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer {
+    background-color: var(--verde100);
+    font-size: 12pt;
+    text-align: center;
+    padding: 4px;
+    color: var(--preto200);
+     
+}
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        flex: 0 1 auto;
+    }
+}
+
+#mapa-ciberataques iframe {
+    width: 100%;
+    max-width: 900px;  
+    height: 60vh;       
+    border: none;
+}
+
+
+@media (max-width: 900px) {
+    #mapa-ciberataques {
+        display: block; 
+    }
+}
