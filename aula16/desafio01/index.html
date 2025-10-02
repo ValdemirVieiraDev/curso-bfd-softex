@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+
+  <main class="container">
+      <div class="inputTarefas">
+        <input type="text" id="tarefaInput" placeholder="Digite uma tarefa" />
+        <button id="adicionarBtn">Adicionar</button>
+      </div>
+
+      <div class="pendentes">
+          <h2>Pendentes</h2>
+          <ul id="listaPendentes"></ul>
+      </div>
+      
+      <div class="concluido">
+          <h2>Concluídas</h2>
+          <ul id="listaConcluidas"></ul>
+      </div>
+  </main>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
