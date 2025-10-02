@@ -12,7 +12,7 @@ class ListaDeTarefas {
     this.listaPendentes = document.getElementById("listaPendentes") as HTMLUListElement;
     this.listaConcluidas = document.getElementById("listaConcluidas") as HTMLUListElement;
     this.input = document.getElementById("tarefaInput") as HTMLInputElement;
-    this.botaoAdicionar = document.getElementById("adicionarBtn") as HTMLButtonElement;
+    this.botaoAdicionar = document.getElementById("btnAdicionar") as HTMLButtonElement;
 
     this.botaoAdicionar.addEventListener("click", () => this.adicionarTarefa());
   }
