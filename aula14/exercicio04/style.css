@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.resultado {
+    margin-top: 20px;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 60px;
+}
